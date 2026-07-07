@@ -18,7 +18,7 @@ planning it out.
 
 ## What this design looks like
 
-Here's the basic idea: when a customer visits the NordicGear website, their request goes
+When a customer visits the NordicGear website, their request goes
 through a few safety and routing steps before it reaches the actual application. First it
 goes through Route 53 (this is just AWS's DNS service — it points nordicgear.com to
 the right place). Then it passes through AWS WAF, which checks the request isn't
