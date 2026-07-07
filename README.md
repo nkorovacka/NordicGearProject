@@ -1,4 +1,4 @@
-# NordicGearProject
+# NordicGear cloud platform design
 This is my design for NordicGear's new cloud platform. NordicGear is an online store
 that sells outdoor gear in Europe. Right now their setup is messy (manual deployments,
 missing logs, no real separation between environments), and this project is my plan for
