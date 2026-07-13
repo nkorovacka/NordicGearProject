@@ -128,4 +128,4 @@ This architecture removes single points of failure while maintaining high availa
 
 ## Network Diagram
 
-![Networking Design](../diagrams/networking.png)
+![Networking Design](../diagrams/networking-diagram.png)
