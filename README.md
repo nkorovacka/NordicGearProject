@@ -10,8 +10,8 @@ planning it out.
 | What | Where |
 |---|---|
 | Networking (VPC, subnets, how AZs work) | `docs/networking-design.md` |
-| Kubernetes setup (namespaces, apps) | `docs/kubernetes-platform.md` |
-| How deployments work (CI/CD, GitOps) | `docs/cicd-gitops.md` |
+| Kubernetes setup (namespaces, apps) | `docs/kubernetes-design.md` |
+| How deployments work (CI/CD, GitOps) | `docs/CI-CD-design.md` |
 | Security and access | `docs/security-design.md` |
 | Logs, metrics, monitoring | `docs/observability-design.md` |
 | Keeping costs under control | `docs/cost-design.md` |
