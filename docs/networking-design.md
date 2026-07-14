@@ -109,22 +109,8 @@ AWS automatically performs failover if the primary Availability Zone becomes una
 
 ## Availability Zone Distribution
 
-The following infrastructure components are duplicated across both Availability Zones:
-
-| Component | AZ A | AZ B |
-|-----------|:----:|:----:|
-| Public subnet | ✓ | ✓ |
-| Private application subnet | ✓ | ✓ |
-| Private data subnet | ✓ | ✓ |
-| ALB node | ✓ | ✓ |
-| NAT Gateway | ✓ | ✓ |
-| Amazon EKS worker nodes | ✓ | ✓ |
-| Amazon RDS primary | ✓ | |
-| Amazon RDS standby | | ✓ |
-
-This architecture removes single points of failure while maintaining high availability for production workloads.
-
----
+Both Availability Zones are set up identically for almost everything: each one has its own public subnet, private application subnet, and private data subnet, along with its own ALB node, NAT Gateway, and set of EKS worker nodes.
+The one exception is RDS. The primary database instance runs in AZ A, while the standby copy - the one that's kept in sync and ready to take over - runs in AZ B, rather than being duplicated in both.
 
 ## Network Diagram
 
