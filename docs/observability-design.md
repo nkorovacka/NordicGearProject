@@ -34,4 +34,4 @@ actual root cause, all without switching tools.
 
 ## Diagram
 
-![Observability](../diagrams/observability-diagram.svg)
+![Observability](../diagrams/observability-diagram.png)
